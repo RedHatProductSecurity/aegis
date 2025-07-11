@@ -29,6 +29,9 @@ check: format lint
 clean:
 	uv clean
 
+eval:
+	uv run pytest -s -p no:logging evals
+
 test:
 	uv run pytest
 
